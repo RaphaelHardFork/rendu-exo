@@ -1,6 +1,6 @@
 # Commandes Linux
 
-##Commandes installation & mise à niveau
+## Commandes installation & mise à niveau
 Mise à niveau de Unbuntu 20.04 : `sudo apt update && sudo apt upgrade`
 `sudo`
 

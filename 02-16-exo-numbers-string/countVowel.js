@@ -24,7 +24,8 @@ for (i = 0; i < texte.length; i++) {
   if (y === 'a' || y === 'e' || y === 'u' || y === 'i' || y === 'o' || y === 'y') {
     nbVowel++
     nbVowel2++
-  } else if (y === 'à' || y === 'é' || y === 'è' || y === 'ê' || y === 'ù') {
+  }
+  else if (y === 'à' || y === 'é' || y === 'è' || y === 'ê' || y === 'ù') {
     nbVowel2++
   }
 }

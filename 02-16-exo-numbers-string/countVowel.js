@@ -17,11 +17,15 @@ Modulant tour à tour sur la lyre d'Orphée
 Les soupirs de la sainte et les cris de la fée.`
 
 let nbVowel = 0
+let nbVowel2 = 0
 
 for (i = 0; i < texte.length; i++) {
   let y = texte[i].toLowerCase()
   if (y === 'a' || y === 'e' || y === 'u' || y === 'i' || y === 'o' || y === 'y') {
     nbVowel++
+    nbVowel2++
+  } else if (y === 'à' || y === 'é' || y === 'è' || y === 'ê' || y === 'ù') {
+    nbVowel2++
   }
 }
-console.log(`Il y a ${nbVowel} voyelles dans le texte.`)
+console.log(`Il y a ${nbVowel} voyelles dans le texte. ${nbVowel2} si on compte les voyelles avec des accents.`)

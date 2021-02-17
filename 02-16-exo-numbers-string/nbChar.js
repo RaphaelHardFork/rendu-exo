@@ -18,4 +18,5 @@ Et j'ai deux fois vainqueur traversé l'Achéron;
 Modulant tour à tour sur la lyre d'Orphée
 Les soupirs de la sainte et les cris de la fée.`
 
+console.log(texte)
 console.log('Nombre de caractères = ' + texte.length)

@@ -5,5 +5,10 @@ particular meaning.
 The most common characters are Alice and Bob.Eve, Mallory, and Trent are also common names.`
 
 let myName = 'Raphael'
-console.log(text.replace(/Alice/g, myName))   //'g' pour toute les occurences de la recherche
+
+//ATTENTION la commande en dessous est du regex.
+console.log(text.replace(/Alice/g, myName))   //'g' pour toutes les occurences de la recherche
 console.log(text.replace(/ALICE/gi, myName))  //'i' pour ignorer la case (majuscule/minuscule)
+
+//Méthode alternative
+console.log(text.replaceAll('Alice', myName))

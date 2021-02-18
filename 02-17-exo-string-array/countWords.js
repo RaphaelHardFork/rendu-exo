@@ -39,3 +39,16 @@ Modulant tour à tour sur la lyre d'Orphée \
 Les soupirs de la sainte et les cris de la fée."
 
 console.log(sonnet.split(' '))
+nbWord = 0
+text = sonnet.split(' ')
+
+text.forEach(element => {
+  if (element === '?' || element === '-') {
+  } else {
+    nbWord++
+  }
+})
+console.log(`Il y a ${nbWord} mots dans le sonnet.`)
+
+//Ou plus simplement et si on compte les ? et -
+console.log(`Il y a ${text.length} mots dans le sonnet`)

@@ -1,0 +1,9 @@
+{
+  "name": "02-25-exo-expressions-conditions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}

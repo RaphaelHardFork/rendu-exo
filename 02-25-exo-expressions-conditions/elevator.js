@@ -31,3 +31,5 @@ if (currentFloor !== targetFloor && targetFloor > -3 && targetFloor <= 7) {
 } else {
   console.log('Où as-tu trouvé ce bouton ?')
 }
+
+currentFloor = targetFloor

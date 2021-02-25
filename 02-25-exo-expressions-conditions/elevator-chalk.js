@@ -1,7 +1,10 @@
 const chalk = require('chalk')
 
+
+
 let currentFloor = 0
-let targetFloor = 5
+let targetFloor = process.argv //ATTENTION valeur de l'étage à mettre après le fichier .js
+targetFloor = Number(targetFloor[2])
 let floor = ''
 
 console.log(`Vous êtes au ${currentFloor}. Où allez vous ?`)

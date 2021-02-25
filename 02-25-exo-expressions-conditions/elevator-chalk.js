@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 
 let currentFloor = 0
-let targetFloor = process.argv
+let targetFloor = 5
 let floor = ''
 
 console.log(`Vous êtes au ${currentFloor}. Où allez vous ?`)

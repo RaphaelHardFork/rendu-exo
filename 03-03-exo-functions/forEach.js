@@ -1,20 +1,28 @@
-table = [3, 4, 5, 6, 7]
-
-table.forEach(elem => {
-
-});
+//Ici on reprend les fonctions crées dans calc.js
+const add = (a, b) => {
+  return a + b
+}
+const sub = (a, b) => {
+  return a - b
+}
 
 const mul = (a, b) => {
   return a * b
 }
 
-const foreach = (tab, fonction) => {
-  let result = []
-  for (i = 0; i < tab.length; i++) {
-
-    result.push(mul(tab[i], 10))
-  }
-  return result
+const div = (a, b) => {
+  return a / b
 }
 
-console.log(foreach(table, mul()))
+
+const foreach = (tab, func) => {
+  let newTab = []
+  for (let elem of tab) {
+    newTab.push(func(elem, elem))
+  }
+  return newTab
+}
+
+
+table = [3, 4, 5, 6, 7]
+console.log(foreach(table, div))

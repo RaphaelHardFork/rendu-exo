@@ -20,20 +20,22 @@ const sortAscend = (tab) => {
 
 
 const makeUnique = (tab) => {
-  for (i = 0; i < tab.length; i++) {
-    if (tab[i + 1, tab.length].includes(tab[i])) {//PAS FINI
-      tab.splice(tab.indexOf(tab[i]), 1)
-      i = 0
+  let newTab = []
+  for (let elem of tab) {
+    if (newTab.includes(elem)) {
+
+    } else {
+      newTab.push(elem)
     }
   }
-  return tab
+  return newTab
 }
 
 
 table = [4, 6, 76, 87, 134, 4, 90, 76, 4, 56, 79, 90]
 
-console.log(biggest(table))
-console.log(sortAscend(table))
+//console.log(biggest(table))
+//console.log(sortAscend(table))
 console.log(makeUnique(table))
 
 

@@ -8,6 +8,7 @@ const isOdd = (nb) => {
   return odd
 }
 
+/*
 const isEven = (nb) => {
   let even
   if (isOdd(nb)) {
@@ -17,7 +18,13 @@ const isEven = (nb) => {
   }
   return even
 }
+*/
 
+//Pour simplifier cette fonction
+
+const isEven = (nb) => {
+  return !isOdd(nb)
+}
 
 console.log(isOdd(6) ? 'true' : 'false')
 
